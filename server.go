@@ -12,7 +12,7 @@ var (
 	clients_name []string
 	
 	HOST   = ""
-	PORT   string
+	PORT   = 3000
 	BUFSIZ = 1024
 )
 	
@@ -65,7 +65,6 @@ func broadcast(msg []byte, prefix string) {
 }
 	
 func main() {
-	fmt.Print("Input PORT: ")
 	fmt.Scanf("%s", &PORT)
 	
 	listener, err = net.Listen("tcp", ":"+PORT)
