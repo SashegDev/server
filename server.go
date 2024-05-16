@@ -12,7 +12,7 @@ var (
 	clients_name []string
 	
 	HOST   = ""
-	PORT   = 3000
+	PORT   = 2400
 	BUFSIZ = 1024
 )
 	
